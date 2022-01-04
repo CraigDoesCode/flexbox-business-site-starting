@@ -8,4 +8,7 @@ In this project, you’ll be using flexbox to design and build the layout for a 
 
 ## Built With
 
+- HTML
+- CSS
+
 ## What I have learned

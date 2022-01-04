@@ -71,6 +71,20 @@ img {
   max-height: auto;
   max-width: 100%;
 }
+/* Meet the Team */
+.team {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  max-width: 33%;
+  overflow: hidden;
+}
+.card img {
+  max-height: auto;
+  max-width: 100%;
+}
+
 /* Footer */
 footer {
   width: 100vw;
