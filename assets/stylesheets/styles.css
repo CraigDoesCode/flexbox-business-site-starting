@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap");
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/banner.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 30px 30px white inset;
+}
+header img {
+  width: 10%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  width: 90%;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+header li {
+  margin: 2rem;
+  font-family: "Teko";
+}
+header li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+img {
+  width: 90%;
+}
+/* Intro */
+.intro {
+  text-align: center;
+}
+.intro p {
+  margin: auto;
+  max-width: 60%;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+/* Catalogue */
+.kittyContainer {
+  display: flex;
+  max-width: 80%;
+  margin: 2rem auto;
+  flex-flow: row wrap;
+  max-height: 50%;
+}
+
+.kittyCard {
+  max-width: 33%;
+  overflow: hidden;
+}
+.kittyCard img {
+  max-height: auto;
+  max-width: 100%;
+}
+/* Footer */
+footer {
+  width: 100vw;
+  height: 10%;
+  background-color: cadetblue;
+  text-align: center;
+}
