@@ -6,6 +6,8 @@ In this project, you’ll be using flexbox to design and build the layout for a 
 
 ## Design
 
+![design](/design.png)
+
 ## Built With
 
 - HTML
