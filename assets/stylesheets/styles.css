@@ -178,6 +178,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 0 1rem 0;
 }
 .team h2 {
   width: 24%;
@@ -225,9 +226,20 @@ section {
 }
 /* Footer */
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   background-color: black;
   color: white;
   text-align: left;
+}
+
+footer .title {
+  font-size: 2rem;
+  align-self: center;
 }
