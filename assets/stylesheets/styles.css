@@ -2,7 +2,42 @@
 /* Header */
 html {
   scroll-behavior: smooth;
+  font-family: Teko;
 }
+/* formatting */
+.graybg {
+  background-color: lightgray;
+}
+.gray-text {
+  color: lightgray;
+}
+.white-text {
+  color: white;
+}
+.text {
+  position: absolute;
+  left: 50%; /* horizontal alignment */
+  top: 50%; /* vertical alignment */
+  transform: translate(-50%, -50%); /* precise centering; see link below */
+}
+h1 {
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  height: 6rem;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  height: 3rem;
+}
+p {
+  font-size: 1.3rem;
+}
+/* header */
 header {
   display: flex;
   flex-direction: row;
@@ -45,6 +80,15 @@ header li a {
 img {
   width: 90%;
 }
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 /* Intro */
 .intro {
   text-align: center;
@@ -53,45 +97,137 @@ img {
   margin: auto;
   max-width: 60%;
 }
-.container {
-  max-width: 80%;
-  margin: auto;
+section {
+  width: 100%;
 }
 /* Catalogue */
 .kittyContainer {
   display: flex;
-  max-width: 80%;
   margin: 2rem auto;
   flex-flow: row wrap;
   max-height: 50%;
+  padding-bottom: 2rem;
+  margin: 0px;
 }
-
-.kittyCard {
+.col {
+  flex: 33%;
   max-width: 33%;
+}
+.kittyCard {
   overflow: hidden;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center; */
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 .kittyCard img {
-  max-height: auto;
-  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: center;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(100%);
 }
+.kittyCard:hover img {
+  -webkit-filter: brightness(70%);
+}
+/* .kittyName {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  word-break: break-word;
+  margin: 0.5rem;
+  text-align: right;
+} */
+.kittyCaption {
+  position: absolute;
+  word-break: break-word;
+  justify-self: flex-start;
+  align-self: flex-end;
+  height: 100%;
+  margin: 0.5rem;
+  color: white;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.kittyCard:hover .kittyCaption {
+  opacity: 1;
+}
+.kittyCard .button {
+  position: absolute;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 1rem;
+  color: white;
+  border: white;
+  font-size: 2rem;
+  border: 0.2rem solid white;
+  border-radius: 0.12rem;
+  padding: 0rem 0.5rem;
+  transition: all 0.2s;
+}
+.kittyCard .button:hover {
+  color: black;
+  background-color: white;
+}
+
 /* Meet the Team */
 .team {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.team h2 {
+  width: 24%;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  height: 2.9rem;
+  font-weight: normal;
+  font-size: 3rem;
 }
 .card {
-  max-width: 33%;
+  width: 24%;
   overflow: hidden;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem; */
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 .card img {
-  max-height: auto;
-  max-width: 100%;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  justify-self: center;
 }
-
+.card p {
+  width: 90%;
+  height: auto;
+}
+.caption {
+  position: absolute;
+  word-break: normal;
+  justify-self: flex-start;
+  align-self: flex-end;
+  margin: 0.5rem;
+}
+.job-roll {
+  position: absolute;
+  word-break: break-word;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin: 0.5rem;
+}
 /* Footer */
 footer {
   width: 100vw;
   height: 10%;
-  background-color: cadetblue;
-  text-align: center;
+  background-color: black;
+  color: white;
+  text-align: left;
 }
